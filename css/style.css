@@ -77,12 +77,12 @@ darloune {
     margin-right: 1rem;
 }
 
-.navbar-toggler{
+.navbar-toggler {
     color: #ffffff !important;
     margin-right: 1rem;
 }
 
-.navbar-toggler-icon{
+.navbar-toggler-icon {
     color: #ffffff !important;
 }
 
@@ -183,16 +183,22 @@ a.nav-link {
     margin-top: 3rem;
 }
 
-.nosotros h5{
+.nosotros h5 {
     text-align: center;
 }
 
 .nosotros-a {
+    display: flex;
+    flex-direction: column;
     margin-top: 5rem;
     margin-left: 3rem;
     margin-bottom: 3rem;
     margin-right: 3rem;
     text-align: justify;
+}
+
+.nosotros-a h2 {
+    font-family: 'darloune';
 }
 
 .nosotros-b {
@@ -207,10 +213,10 @@ a.nav-link {
     border-radius: 3rem;
     margin-bottom: 20rem;
     margin-left: 3rem;
-    
+
 }
 
-.titulo-servicios{
+.titulo-servicios {
     grid-area: brinco;
     text-align: center;
     font-family: 'darloune';
@@ -228,33 +234,35 @@ a.nav-link {
 
 }
 
-.servicios-a{
-    display: flex;
-   align-items: center;
-   justify-content: center;
-   margin-bottom: 1rem;
-}
-
-.servicios-b{
+.servicios-a {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 1rem;
 }
 
-.servicios-c{
+.servicios-b {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 1rem;
 }
-.servicios-d{
+
+.servicios-c {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 1rem;
 }
-.servicios-e{
+
+.servicios-d {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.servicios-e {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -263,20 +271,20 @@ a.nav-link {
 
 
 
-.servicios h5{
+.servicios h5 {
     text-align: center;
 }
 
-.servicios p{
+.servicios p {
     text-align: justify;
 }
 
-.servicios button{
+.servicios button {
     text-align: center;
     background-color: rgba(50, 50, 231, 0.216) !important;
 }
 
-.servicios img{
+.servicios img {
     height: 10rem;
     width: 10rem;
     align-content: center;
@@ -284,24 +292,39 @@ a.nav-link {
     margin-top: 2rem;
 }
 
-.card-body{
-    display: flex;
+.card-body {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(75px, 1fr));
     flex-direction: column;
-    height: 15rem;
-    justify-content: space-around;
+    align-items: center;
+    justify-items: center;
     text-align: start;
-    
+    height: 18rem;
 
 }
 
-.btn{
-    background-color: rgba(50, 50, 231, 0.367) !important;
-    width: 15rem;
+.card {
+    min-height: 18rem;
+    text-align: justify;
+    width: fit-content;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.card-text {
     margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.btn {
+    background-color: rgba(140, 50, 231, 0.722) !important;
+    width: 100%;
+    margin-top: 1rem;
+    font-weight: 400;
 
 }
 
-.contacto{
+.contacto {
     grid-area: contacto;
     margin-top: 3rem;
     display: flex;
@@ -315,34 +338,34 @@ a.nav-link {
     width: 100%;
 }
 
-.formulario{
+.formulario {
     background-color: #bd1ec84f;
     display: flex;
     justify-content: center;
-    width: 30rem;
+    width: 35rem;
     border-radius: 1rem;
     margin-top: 3rem;
     margin-bottom: 3rem;
 }
 
-.formulario h2{
-text-align: center;
-color: #ffffff;
-margin-top: 3rem;
+.formulario h2 {
+    text-align: center;
+    color: #ffffff;
+    margin-top: 3rem;
+    font-family: 'darloune';
 }
 
-.row{
+.row {
     justify-content: center;
     margin-bottom: 3rem;
 }
 
 .footer {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
     align-items: center;
     align-content: center;
+    justify-items: center;
     grid-area: footer;
     text-align: center;
     list-style: none;
@@ -422,53 +445,3 @@ margin-top: 3rem;
     text-decoration: none;
     color: #ffffff;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
